@@ -1,0 +1,12 @@
+.active_slider_{
+    opacity: 1;
+}
+.active_menu_{
+    color: #000 !important;
+}
+.active_menu_back{
+    background-color: #fff;
+}
+.active_tab{
+    color: #000;
+}
