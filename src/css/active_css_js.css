@@ -10,3 +10,7 @@
 .active_tab{
     color: #000;
 }
+.active_layout_control{
+    position: fixed;
+    top: 0;
+}

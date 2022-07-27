@@ -8,7 +8,7 @@
 }
 body{
     font-size: 16px;
-    color: #222;
+    color: #333;
 }
 .main{
     max-width: 1024px;
@@ -140,6 +140,7 @@ nav{
     width: 20%;
 }
 .production{
+
     width: 80%;
 }
 .selected{
@@ -177,7 +178,7 @@ nav{
 ._text{
     margin-top: 10px;
 }
-.size_title,.production{
+.size_title{
     margin-top: 20px;
 }
 .add_icon{
@@ -208,4 +209,18 @@ nav{
     display: grid;
     gap: 20px 20px;
     grid-template-columns: repeat(4,1fr);
+}
+.layout_control{
+    height: 100vh;
+    overflow: auto;
+}
+.layout_control::-webkit-scrollbar{
+    width: 3px;
+}
+.layout_control::-webkit-scrollbar-thumb{
+    border-radius:5px ;
+    background-color: #999;
+}
+.size_text{
+    margin-bottom: 20px;
 }

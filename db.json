@@ -1,9 +1,180 @@
 {
-    "nam":[
+    "nam": [
+        {
+            "id": 1,
+            "name": "Đầm răng cưa Thanh lịch",
+            "text": "",
+            "img": "./src/img/163590366419548bf5686bffc262149504c33edbed_thumbnail_405x552.webp",
+            "price": "200.000",
+            "value": 200
+        },
+        {
+            "id": 2,
+            "name": "Đầm Tách cao Họa tiết hoa Boho",
+            "text": "",
+            "img": "./src/img/1571733870511ed5f789934c5ccb35d946b89774ac_thumbnail_405x552.webp",
+            "price": "192.000",
+            "value": 300
+        },
+        {
+            "id": 3,
+            "name": "SHEIN Đầm Dây kéo màu trơn màu đen Thanh lịch",
+            "text": "",
+            "img": "./src/img/1611711967897887c7ed6ba88bd85046fd00277e90_thumbnail_405x552.webp",
+            "price": "273.000",
+            "value": 100
+        },
+        {
+            "id": 4,
+            "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm",
+            "text": "",
+            "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
+            "price": "226.000",
+            "value": 250
+        },
+        {
+            "id": 5,
+            "name": "SHEIN Đầm Viên lá sen Sò điệp Nút phía trước màu trơn Thanh lịch",
+            "text": "",
+            "img": "./src/img/1643087537a3c00450e88e06108c5c429aaf702c9b_thumbnail_405x552.webp",
+            "price": "192.000",
+            "value": 300
+        },
+        {
+            "id": 6,
+            "name": "SHEIN Đầm Dây kéo màu trơn Thanh lịch",
+            "text": "",
+            "img": "./src/img/1648436766782f6447b113470c31392e4d7408b0ee_thumbnail_405x552.webp",
+            "price": "237.000",
+            "value": 450
+        },
+        {
+            "id": 7,
+            "name": "SHEIN Đầm Chia Hoa Thanh lịch",
+            "text": "",
+            "img": "./src/img/1650431415fb5e24ff27627466fe6f2210f5016549_thumbnail_405x552.webp",
+            "price": "192.000",
+            "value": 350
+        },
+        {
+            "id": 8,
+            "name": "DAZY Đầm Nút Cắt ra Tách cao màu trơn Thanh lịch",
+            "text": "",
+            "img": "./src/img/165112360288ebca48c916a0805204b02bef7a99c9_thumbnail_405x552.webp",
+            "price": "160.000",
+            "value": 400
+        },
+        {
+            "id": 9,
+            "name": "evoluSHEIN Đầm Lộ Lưng Dây kéo Tất cả trên in Giải trí",
+            "text": "",
+            "img": "./src/img/18.webp",
+            "price": "252.000",
+            "value": 410
+        },
+        {
+            "id": 10,
+            "name": "SHEIN Đầm Nút Chia Dây kéo răng cưa Thanh lịch",
+            "text": "",
+            "img": "./src/img/1571733870511ed5f789934c5ccb35d946b89774ac_thumbnail_405x552.webp",
+            "price": "257.000",
+            "value": 500
+        },
+        {
+            "id": 11,
+            "name": "Đầm Tách cao Họa tiết hoa Boho",
+            "text": "",
+            "img": "./src/img/9.webp",
+            "price": "192.000",
+            "value": 320
+        },
+        {
+            "id": 12,
+            "name": "DAZY Đầm Lộ Lưng màu trơn Giải trí",
+            "text": "",
+            "img": "./src/img/10.webp",
+            "price": "131.000",
+            "value": 800
+        },
+        {
+            "id": 13,
+            "name": "Đầm Tách cao Họa tiết hoa Boho",
+            "text": "",
+            "img": "./src/img/11.webp",
+            "price": "700.000",
+            "value": 690
+        },
+        {
+            "id": 14,
+            "name": "Đầm Thắt nút màu trơn Giải trí",
+            "text": "",
+            "img": "./src/img/1654660624bfe26233bfb7469243f6d58a07090bf6_thumbnail_405x552.webp",
+            "price": "876.000",
+            "value": 700
+        },
+        {
+            "id": 15,
+            "name": " Đầm Lộ Lưng Xù Buộc lại Sọc Giải trí",
+            "text": "",
+            "img": "./src/img/1.webp",
+            "price": "890.000",
+            "value": 800
+        },
+        {
+            "id": 16,
+            "name": " Đầm Bất đối xứng Trọn gói Cà vạt nhuộm Giải trí",
+            "text": "",
+            "img": "./src/img/2.webp",
+            "price": "989.000",
+            "value": 600
+        },
+        {
+            "id": 17,
+            "name": " Đầm Viên lá sen Dải chun Nút phía trước màu trơn Thanh lịch",
+            "text": "",
+            "img": "./src/img/3.webp",
+            "price": "192.000",
+            "value": 100
+        },
+        {
+            "id": 18,
+            "name": "Đầm Thắt lưng Trọn gói Hoa Boho",
+            "text": "",
+            "img": "./src/img/4.webp",
+            "price": "1192.000",
+            "value": 900
+        },
+        {
+            "id": 19,
+            "name": " ",
+            "text": "",
+            "img": "./src/img/5.webp",
+            "price": "192.000",
+            "value": 300
+        },
+        {
+            "id": 20,
+            "name": "SHEIN MOD Đầm Dây kéo Hoa Boho ",
+            "text": "",
+            "img": "./src/img/8.webp",
+            "price": "192.000",
+            "value": 700
+        },
+        {
+            "id": 21,
+            "name": "Dazy-Less Đầm Xù màu trơn Giải trí",
+            "text": "",
+            "img": "./src/img/76.webp",
+            "price": "192.000",
+            "value": 800
+        }
+    ],
+    "auth":[
         {
             "id":1,
-            "name":"Phạm giang nam",
-            "price":2000
+            "name":"nam",
+            "email":"nampham18082003@gmail.com",
+            "pw":"123"
         }
     ]
 }
