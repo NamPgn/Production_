@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./src/css/sing_in.css">
+    <link rel="stylesheet" href="./src/css/hover.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/active_css_js.css">
+    <link rel="stylesheet" href="./src/css/include.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="singin">
+            <h3>Đăng nhập</h3>
+            <div class="form_item">
+                <div class="form_control">
+                    <p> <span class="">* </span>Email</p>
+                    <input class="ip email" type="email" placeholder="Email của bạn..">
+                    <span class="m name_validation"></span>
+                </div>
+                <div class="form_control">
+                    <p> <span>* </span>Password</p>
+                    <input class="ip pass" type="password" placeholder="Password của bạn">
+                    <span class="email_err m"></span>
+                </div>
+            </div>
+            <p class="err" style="color: red; font-size: 12px;"></p>
+            <a class="not_login" href="./sign-in.html">Bạn chưa có tài khoản!</a>
+            <button class="click" type="button">Đăng nhập</button>
+        </div>
+    </div>
+    <footer class="ft">
+        <p>Copyright © 2022</p>
+    </footer>
+    <script type="module" src="./src/auth/sign-in.js"></script>
+    <script type="module" src="./src/auth/sign-up.js"></script>
+</body>
+
+</html>

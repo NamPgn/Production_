@@ -35,7 +35,7 @@ const header={
             <!-- ..header_iocn -->
             <div class="header_location w_25">
                 <div class="user">
-                    <i class="fa-solid fa-user"></i>
+                    <a href="./sing-up.html"><i class="fa-solid fa-user"></i></a>
                 </div>
                 <div class="cart">
                     <i class="fa-solid fa-cart-shopping"></i>

@@ -1,0 +1,62 @@
+.singin{
+    max-width: 400px;
+    margin: 0 auto;
+}
+form h3{
+    text-align: center;
+    padding: 5px;
+    background: #327BB7;
+    color: #fff;
+}
+body{
+    font-size: 12px;
+}
+.form_control{
+    width: 50%;
+}
+.form_control p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+.form_control label{
+    font-size: 14px;
+}
+.form_item{
+    display: flex;
+    gap: 0 20px;
+}
+.form_control .ip{
+    outline: none;
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.singin button{
+    float: right;
+    margin-top: 20px;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(to right,#FB4E25,#FB7B12);
+    color: #fff;
+}
+.singin button:hover{
+    cursor: pointer;
+}
+.singin{
+    margin-top: 50px;
+}
+.form_control p span{
+    color: red;
+}
+.m{
+    font-size: 10px;
+    margin: 5px 0;
+    color: red;
+}
+.not_login{
+    font-size: 12px;
+    color: rgb(8, 79, 232);
+}

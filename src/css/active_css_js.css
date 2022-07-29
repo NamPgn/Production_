@@ -14,3 +14,7 @@
     position: fixed;
     top: 0;
 }
+.active_add_item{
+    opacity: 1;
+    z-index: 9;
+}

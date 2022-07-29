@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./src/css/sing_in.css">
+    <link rel="stylesheet" href="./src/css/hover.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/active_css_js.css">
+    <link rel="stylesheet" href="./src/css/include.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin-in</title>
+</head>
+<body>
+    <div class="main">
+        <div class="singin">
+            <!-- <form action="" onsubmit="return validation()"> -->
+                <h3>Đăng kí</h3>
+              <div class="form_item">
+                <div class="form_control">
+                    <p> <span class="">* </span> Họ và tên</p>
+                    <input  class="ip name" type="text" placeholder="Họ và tên">
+                    <span class="m name_validation"></span>
+                  </div>
+                  <div class="form_control">
+                    <p> <span>* </span>Email</p>
+                    <input class="ip email" type="email" placeholder="Email của bạn">
+                    <span class="email_err m"></span>
+                  </div>
+              </div>
+              <div class="form_item">
+                <div class="form_control">
+                    <p> <span>* </span>Mật khẩu</p>
+                    <input class="ip pw" type="password" placeholder="Mật khẩu">
+                    <span class="ps m"></span>
+                  </div>
+                  <div class="form_control">
+                    <p> <span>* </span>Xác nhận mật khẩu</p>
+                    <input class="ip repass" type="password" placeholder="Xác nhận mật khẩu">
+                    <span class="repass_ m"></span>
+                  </div>
+              </div>
+              <div class="form_item">
+                <div class="form_control">
+                    <p> <span>* </span> Tuổi</p>
+                    <input class="ip age" type="text" placeholder="Tuổi">
+                    <span class="age_e m"></span>
+                  </div>
+                  <div class="form_control">
+                    <p> <span>*</span> Gioi tính</p>
+                    <label for="nam">Nam</label>
+                    <input type="radio" id="nam" name="fav_language" value="Nam"><br>
+                    <label for="nu">Nữ</label>
+                    <input type="radio" id="nu" name="fav_language" value="Nữ">
+                    <span class="radio_err m"></span>
+                  </div>
+              </div>
+              <a href="./sing-up.html" class="not_login">Đăng nhập tại đây</a>
+              <button type="button" id="clickLogin">Đăng kí</button>
+            <!-- </form> -->
+        </div>
+    </div>
+    <footer class="ft">
+      <p>Copyright © 2022</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./src/auth/sign-in.js"></script>
+
+    
+</body>
+</html>
