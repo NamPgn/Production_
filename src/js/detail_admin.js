@@ -65,17 +65,35 @@ async function detail(){
 
     //is update
     const isUpdate = function () {
-        return new Promise(function (resolve, reject) {
-            axios.put('http://localhost:3000/nam/' + url, {
-                img: img.value,
-                name: name_product.value,
-                price: price.value
-            })
-                .then(function (response) {
-                    resolve(response)
-                })
-            return false;
-        });
+        Swal.fire({
+            title: 'Bạn có chắc muốn sửa sản phẩm không ?',
+            text: "Bạn sẽ không thể hoàn tác!",
+            icon: 'info',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Có, sửa sản phẩm!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'add!',
+                    'Sửa sản phẩm thành công',
+                    'success'
+                )
+                return new Promise(function (resolve, reject) {
+                    axios.put('http://localhost:3000/nam/' + url, {
+                        img: img.value,
+                        name: name_product.value,
+                        price: price.value
+                    })
+                        .then(function (response) {
+                            resolve(response)
+                        })
+                    return false;
+                });
+            }
+        })
+
     }
     document.querySelector('.click_producttinon').addEventListener('click',isUpdate);
     const click_form_value=document.querySelector('.edit').addEventListener('click',updated);

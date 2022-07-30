@@ -1,4 +1,6 @@
-
+import header from "../component/header.js";
+const header_admin=document.querySelector('header');
+header_admin.innerHTML=header.render();
 
 const img = document.querySelector('.img');
 const name_product = document.querySelector('.name_product');
@@ -18,8 +20,11 @@ const _api_admin = async function (data) {
                 <div class="love_icon">
                     <i class="fa-regular fa-heart"></i>
                 </div>
-                <a href="./detail_admin.html?_id=${l.id}"><button type="button" class="btn btn-warning edit"  style="font-size:11px;">Edit</button></a>
-                <a href="./admin.html?_id=${l.id}"> <button type="button" class="btn btn-danger delete"  style="font-size:11px;">Delete</button></a>
+                <p  style="font-size: 12px; margin-top:1px;">Kiểu: ${l.type}</p>
+                <p  style="font-size: 12px;">Mã sản phẩm: #${l.msp}</p>
+                <a href="./detail_admin.html?_id=${l.id}"><button type="button" class="btn btn-warning edit"  style="font-size:11px;">Sửa</button></a>
+                <a href="./admin.html?_id=${l.id}"> <button type="button" class="btn btn-danger delete"  style="font-size:11px;">Xóa</button></a>
+                
             </div>
         `
 
@@ -46,6 +51,8 @@ const _api_admin = async function (data) {
     delete_products.forEach(element => {
         element.addEventListener('click', delete_product);
     });
+
+    
 }
 _api_admin();
 
@@ -67,18 +74,18 @@ const add_data = async () => {
     const production_data = await (await fetch("http://localhost:3000/nam")).json();
     console.log(1);
     Swal.fire({
-        title: 'Are you sure you want more?',
-        text: "You won't be able to revert this!",
+        title: 'Bạn có chắc muốn thêm sản phẩm không ?',
+        text: "Bạn sẽ không thể hoàn tác!",
         icon: 'info',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, add it!'
+        confirmButtonText: 'Có, Thêm sản phẩm!'
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire(
                 'add!',
-                'You have successfully added your product',
+                'Thêm sản phẩm thành công',
                 'success'
             )
             return new Promise((resolve, reject) => {
