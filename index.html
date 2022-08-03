@@ -19,63 +19,63 @@
 </head>
 
 <body>
+    <header>
+
+    </header>
     <div class="container">
-        <header>
-            
-        </header>
         <div class="main">
             <div class="banner">
-               <div class="header_banner">
-                <div class="tab active_tab">
-                    <span>Trang chủ</span>
-                    <span class="gach">/</span>
+                <div class="header_banner">
+                    <div class="tab active_tab">
+                        <span>Trang chủ</span>
+                        <span class="gach">/</span>
+                    </div>
+                    <div class="tab">
+                        <span>Trang Phục</span>
+                        <span class="gach">/</span>
+                    </div>
+                    <div class="tab">
+                        <span>Đầm</span>
+                        <span class="gach">/</span>
+                    </div>
                 </div>
-                <div class="tab">
-                    <span>Trang Phục</span>
-                    <span class="gach">/</span>
+                <div class="api_select">
+                    <!-- api -->
+                    <h2>Quần áo phụ nữ</h2>
+                    <ul>
+                        <li>SHEIN BASICS</li>
+                        <li>Thêm dài</li>
+                        <li>Áo sơ mi</li>
+                        <li>Sọc</li>
+                        <li>Ống tay áo</li>
+                        <li>Tất cả trên in</li>
+                        <li>Phân lớp</li>
+                        <li>Phân lớp</li>
+                        <li>Họa tiết hoa</li>
+                        <li>Áo khoác</li>
+                        <li>Áo choàng</li>
+                        <li>Hoa</li>
+                        <li>Ruffle</li>
+                        <li>Eo hẹp</li>
+                    </ul>
                 </div>
-                <div class="tab">
-                    <span>Đầm</span>
-                    <span class="gach">/</span>
+                <div class="selected">
+                    <p>Tìm kiếm theo</p>
+                    <select name="" id="select">
+                        <option value="0">Phổ biến nhất</option>
+                        <option value="1">Tất cả</option>
+                        <option value="2">Mới nhất</option>
+                        <option value="3">Cũ nhất</option>
+                        <option value="4">Gia trên 500k</option>
+                        <option value="5">Gia dưới 500k</option>
+                    </select>
                 </div>
-               </div>
-               <div class="api_select">
-                   <!-- api -->
-                   <h2>Quần áo phụ nữ</h2>
-                   <ul>
-                       <li>SHEIN BASICS</li>
-                       <li>Thêm dài</li>
-                       <li>Áo sơ mi</li>
-                       <li>Sọc</li>
-                       <li>Ống tay áo</li>
-                       <li>Tất cả trên in</li>
-                       <li>Phân lớp</li>
-                       <li>Phân lớp</li>
-                       <li>Họa tiết hoa</li>
-                       <li>Áo khoác</li>
-                       <li>Áo choàng</li>
-                       <li>Hoa</li>
-                       <li>Ruffle</li>
-                       <li>Eo hẹp</li>
-                   </ul>
-               </div>
-               <div class="selected">
-                <p>Tìm kiếm theo</p>
-                <select name="" id="select">
-                    <option value="0">Phổ biến nhất</option>
-                    <option value="1">Tất cả</option>
-                    <option value="2">Mới nhất</option>
-                    <option value="3">Cũ nhất</option>
-                    <option value="4">Gia trên 500k</option>
-                    <option value="5">Gia dưới 500k</option>
-                </select>
-               </div>
-               <div class="banner_conten">
+                <div class="banner_conten">
                     <div class="layout_control">
                         <div class="border_"></div>
                         <div class="size_title">
                             <h4>Kích thước</h4>
-                        </div>      
+                        </div>
                         <div class="size_text">
                             <div class="_text">
                                 <input type="checkbox">
@@ -106,7 +106,7 @@
                         <div class="border_"></div>
                         <div class="size_title">
                             <h4>Kích thước</h4>
-                        </div> 
+                        </div>
                         <div class="_text">
                             <input type="checkbox">
                             <p>Hai dây</p>
@@ -140,37 +140,72 @@
                         <div class="size_title add_icon">
                             <h4>Phong cách</h4>
                             <i class="fa-solid fa-plus"></i>
-                        </div> 
+                        </div>
                         <div class="size_title add_icon">
                             <h4>Chiều dài</h4>
                             <i class="fa-solid fa-plus"></i>
-                        </div> 
+                        </div>
                         <div class="size_title add_icon">
                             <h4>Kiểu mẫu</h4>
                             <i class="fa-solid fa-plus"></i>
-                        </div> 
+                        </div>
                         <div class="size_title add_icon">
                             <h4>Màu sắc</h4>
                             <i class="fa-solid fa-plus"></i>
-                        </div> 
+                        </div>
                         <div class="size_title add_icon">
                             <h4>Viền</h4>
                             <i class="fa-solid fa-plus"></i>
-                        </div> 
+                        </div>
                     </div>
                     <div class="production">
                         <div class="product_conten">
-                           
+
                         </div>
                     </div>
-               </div>
+                </div>
             </div>
         </div>
     </div>
     <input class="_id" type="hidden" value="">
+    <div class="form_control_edit_add_de">
+        <h4 style="text-align: center;">Chỉnh sửa Thông tin của bạn</h4>
+        <input type="hidden" value="" class="nam">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Link hình ảnh của bạn</label>
+            <input type="text" class="form-control img" id="exampleInputEmail1 " aria-describedby="emailHelp"
+              placeholder="Link">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Tên</label>
+            <input type="text" class="form-control name_product" id="exampleInputPassword1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Age</label>
+            <input type="number" class="form-control price_" id="exampleInputPassword1" placeholder="Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Email</label>
+            <input type="email" class="form-control email_address" disabled id="exampleInputPassword1" placeholder="Price">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Passwork</label>
+            <input type="password" class="form-control password" disabled id="exampleInputPassword1" placeholder="Price">
+          </div>
+          <button type="button" class="btn btn-primary click_producttinon">Submit</button>
+        </form>
+        <div class="icon_close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="users__">
+        
+    </div>
     <footer class="ft">
         <p>Copyright © 2022</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.17/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

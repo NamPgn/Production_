@@ -1,12 +1,27 @@
 import header from "../component/header.js";
-const header_admin=document.querySelector('header');
-header_admin.innerHTML=header.render();
+const header_admin = document.querySelector('header');
+header_admin.innerHTML = header.render();
 
 const img = document.querySelector('.img');
 const name_product = document.querySelector('.name_product');
 const price = document.querySelector('.price_');
 const ren = document.querySelector('.product_conten');
 var production_data;
+function delete_product() {
+    var id = this.getAttribute('id');
+    const confirm_delete = confirm("Bạn có chắc muốn xóa không?");
+     if ( confirm_delete) {
+         return new Promise ( function (resolve, reject) {
+            // const url = new URLSearchParams(window.location.search).get("_id");
+            // console.log(url);
+             axios.delete('http://localhost:3000/nam/' + id)
+                .then(function (res) {
+                    resolve(res);
+                    console.log(res);
+                })
+        })
+    }
+}
 const _api_admin = async function (data) {
     let api = production_data = await (await fetch('http://localhost:3000/nam')).json();
     console.log(api)
@@ -23,36 +38,18 @@ const _api_admin = async function (data) {
                 <p  style="font-size: 12px; margin-top:1px;">Kiểu: ${l.type}</p>
                 <p  style="font-size: 12px;">Mã sản phẩm: #${l.msp}</p>
                 <a href="./detail_admin.html?_id=${l.id}"><button type="button" class="btn btn-warning edit"  style="font-size:11px;">Sửa</button></a>
-                <a href="./admin.html?_id=${l.id}"> <button type="button" class="btn btn-danger delete"  style="font-size:11px;">Xóa</button></a>
-                
+                <button type="button" class="btn btn-danger delete" id="${l.id}" style="font-size:11px;">Xóa</button></a>
             </div>
         `
-
         }
-
     }
-
     //delete
     const delete_products = document.querySelectorAll('.delete');
-    const delete_product = async function (e) {
-        return new Promise(function (resolve, reject) {
-            const url = new URLSearchParams(window.location.search).get("_id");
-            console.log(url);
-            const confirm_delete = confirm("Want to delete?");
-            if (confirm_delete) {
-                axios.delete('http://localhost:3000/nam/' + url)
-                    .then(function (res) {
-                        resolve(res);
-                        console.log(res);
-                    })
-            }
-        })
-    }
+
     delete_products.forEach(element => {
         element.addEventListener('click', delete_product);
     });
 
-    
 }
 _api_admin();
 
@@ -103,6 +100,8 @@ const add_data = async () => {
 }
 const _add_production = document.querySelector('.click_producttinon');
 _add_production.addEventListener('click', add_data);
+
+
 
 
 var select = document.querySelector('.selected select');
@@ -211,4 +210,4 @@ async function search() {
         })
     }
 }
-select.addEventListener('change',search);
+select.addEventListener('change', search);

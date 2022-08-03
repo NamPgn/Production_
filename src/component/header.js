@@ -53,6 +53,9 @@ const header={
                         <i class="fa-solid fa-globe"></i>
                     </div>
                 </div>
+                <div title="chi tiết user" class="user_detail">
+                    <i class="fa-solid fa-user-check"></i>
+                </div>
             </div>
             <div class="header_bottom">
                 <!-- /menu -->
@@ -73,6 +76,7 @@ const header={
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </div>
+            
         `
     }
 }

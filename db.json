@@ -2,12 +2,13 @@
   "nam": [
     {
       "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
-      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm ạdhfgsdf",
+      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
       "price": "226.000",
-      "id": 4,
-      "new": true,
-      "msp": "AB21",
-      "type": "áo"
+      "new": "undefined",
+      "type": "Quần",
+      "msp": "AB22",
+      "value": "undefined",
+      "id": 4
     },
     {
       "id": 5,
@@ -85,15 +86,14 @@
       "type": "Váy"
     },
     {
-      "id": 12,
-      "name": "DAZY Đầm Lộ Lưng màu trơn Giải trí",
-      "text": "",
       "img": "./src/img/10.webp",
+      "name": "DAZY Đầm Lộ Lưng màu trơn Giải trí",
       "price": "531.000",
-      "value": 800,
-      "new": true,
+      "new": "true",
+      "type": "Váy",
       "msp": "AB25",
-      "type": "Váy"
+      "value": "800",
+      "id": 12
     },
     {
       "img": "./src/img/1654660624bfe26233bfb7469243f6d58a07090bf6_thumbnail_405x552.webp",
@@ -180,17 +180,20 @@
   ],
   "auth": [
     {
-      "id": 1,
-      "name": "nam",
-      "email": "nampham18082003@gmail.com",
-      "pass": "123"
+      "img": "https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/294630009_789678032392563_5819255818178576691_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Ngejt3j-Ha0AX_AgO39&_nc_ht=scontent.fhan2-3.fna&oh=00_AT-ZuzQwb5N4KiaSItgSji2n4_uWiA8vic_S7secWsuhjA&oe=62ED0370",
+      "name": "Phạm Giang Nam",
+      "age": "19",
+      "email": "nampham1808203@gmail.com",
+      "pass": "12",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "giangtesst",
+      "img": "https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/271888472_1859299411126408_3453770067510485224_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=YfFiVqN59JAAX-3F0mZ&_nc_ht=scontent.fhan2-2.fna&oh=00_AT9h8u7G7BOT3S_9QvsKyZezfLWo7e63eHMWkKrJzfBkJA&oe=62F020DD",
+      "name": "Phạm Hồng Giang",
+      "age": "23",
       "email": "phamhonggiang@gmail.com",
       "pass": "123",
-      "age": "123"
+      "id": 2
     },
     {
       "id": 3,
@@ -219,6 +222,13 @@
       "email": "nampham1808203@gmail.com",
       "pass": "123",
       "age": "19"
+    },
+    {
+      "id": 7,
+      "name": "Duc trung",
+      "email": "ductrung@gmail.com",
+      "pass": "1",
+      "age": "19"
     }
   ],
   "cart": [
@@ -230,16 +240,34 @@
     },
     {
       "id": 2,
-      "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
-      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm ạdhfgsdf",
-      "price": "226.000"
+      "img": "./src/img/18.webp",
+      "name": "evoluSHEIN Đầm Lộ Lưng Dây kéo Tất cả trên in Giải trí",
+      "price": "252.000"
     },
     {
-      "id_": 3,
+      "id": 3,
+      "img": "https://cdn.tgdd.vn/2020/07/content/bo-anh-yasuo-lol-dep-va-chat-de-lam-hinh-nen-dien-thoai-may1-800x450.jpg",
+      "name": "Yasuo vĩnh phúc",
+      "price": "455"
+    },
+    {
+      "id": 4,
+      "img": "./src/img/1643087537a3c00450e88e06108c5c429aaf702c9b_thumbnail_405x552.webp",
+      "name": "SHEIN Đầm Viên lá sen Sò điệp Nút phía trước màu trơn Thanh lịch",
+      "price": "192.000"
+    },
+    {
+      "id": 5,
       "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
-      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm ạdhfgsdf",
-      "price": "226.000",
-      "id": 3
+      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
+      "price": "226.000"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "pass": "1"
     }
   ]
 }
