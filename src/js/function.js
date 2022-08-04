@@ -1,12 +1,13 @@
 const ren = document.querySelector('.product_conten');
 var product;
 async function add_to_cart() {
-    const id = this.getAttribute('id');
-    const api = await (await fetch('http://localhost:3000/nam')).json();
+    const url=new URLSearchParams(window.location.search).get('_id');
+    const id = this.getAttribute('id');//laasys ra cái id
+    const api = await (await fetch('http://localhost:3000/nam')).json(); //api
     const api_cart = await (await fetch(' http://localhost:3000/cart')).json();
     //yêu cầu đăng nhập
     const btn_sing = document.querySelectorAll('.cl_sign');
-    if (id) {
+    if (url) {
         const get_id = api.find(function (a) {
             return a.id == id
         })

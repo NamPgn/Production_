@@ -1,10 +1,6 @@
 import header from "../component/header.js";
 const header_admin = document.querySelector('header');
 header_admin.innerHTML = header.render();
-
-const img = document.querySelector('.img');
-const name_product = document.querySelector('.name_product');
-const price = document.querySelector('.price_');
 const ren = document.querySelector('.product_conten');
 var production_data;
 function delete_product() {
@@ -67,6 +63,11 @@ close.addEventListener('click', function () {
 })
 // add
 
+const img = document.querySelector('.img');
+const name_product = document.querySelector('.name_product');
+const price = document.querySelector('.price_');
+const mssp=document.querySelector('.masp');
+const form_selected=document.querySelector('.form-select-sm');
 const add_data = async () => {
     const production_data = await (await fetch("http://localhost:3000/nam")).json();
     console.log(1);
@@ -91,6 +92,8 @@ const add_data = async () => {
                     img: img.value,
                     name: name_product.value,
                     price: price.value,
+                    msp:mssp.value,
+                    type:form_selected.value
                 }).then((response) => {
                     resolve(response);
                 })

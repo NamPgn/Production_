@@ -4,10 +4,10 @@
       "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
       "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
       "price": "226.000",
-      "new": "undefined",
+      "new": true,
       "type": "Quần",
       "msp": "AB22",
-      "value": "undefined",
+      "value": 400,
       "id": 4
     },
     {
@@ -176,6 +176,24 @@
       "id": 22,
       "msp": "AB25",
       "type": "Váy"
+    },
+    {
+      "img": "https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/271888472_1859299411126408_3453770067510485224_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=YfFiVqN59JAAX-3F0mZ&_nc_ht=scontent.fhan2-2.fna&oh=00_AT9h8u7G7BOT3S_9QvsKyZezfLWo7e63eHMWkKrJzfBkJA&oe=62F020DD",
+      "name": "Thử thách 1: Lập 01 website giới thiệu về bản thân (portfolio) và thông tin quá trình thực tập tại I&E Vietna",
+      "price": "2000000",
+      "new": "undefined",
+      "type": "Áo",
+      "msp": "giangtesst",
+      "value": "undefined",
+      "id": 23
+    },
+    {
+      "id": 24,
+      "img": "https://scontent.fhan5-5.fna.fbcdn.net/v/t39.30808-1/294630009_789678032392563_5819255818178576691_n.jpg?stp=dst-jpg_p240x240&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=mK6i04ss2s0AX8PTLLa&_nc_ht=scontent.fhan5-5.fna&oh=00_AT-siNPNjiApC5Kxj4mZ-L-pdxqxkGdQYjyw5ERbqnxYzw&oe=62EF6E2A",
+      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
+      "price": "4000000",
+      "msp": "DAZY Đầm Lộ Lưng màu trơn Giải trí",
+      "type": "Quần"
     }
   ],
   "auth": [
@@ -258,6 +276,12 @@
     },
     {
       "id": 5,
+      "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
+      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
+      "price": "226.000"
+    },
+    {
+      "id": 6,
       "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
       "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
       "price": "226.000"
