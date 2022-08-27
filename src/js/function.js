@@ -1,10 +1,20 @@
 const ren = document.querySelector('.product_conten');
 var product;
+async function test() {
+    const auth_cart = await (await fetch(' http://localhost:3000/auth')).json();
+    auth_cart.filter(i => {
+        console.log(i.cart);
+    })
+}
+test();
 async function add_to_cart() {
-    const url=new URLSearchParams(window.location.search).get('_id');
+    const url = new URLSearchParams(window.location.search).get('_id');
     const id = this.getAttribute('id');//laasys ra cái id
     const api = await (await fetch('http://localhost:3000/nam')).json(); //api
     const api_cart = await (await fetch(' http://localhost:3000/cart')).json();
+    const auth_cart = await (await fetch(' http://localhost:3000/auth')).json();
+
+
     //yêu cầu đăng nhập
     const btn_sing = document.querySelectorAll('.cl_sign');
     if (url) {
@@ -21,10 +31,11 @@ async function add_to_cart() {
                 showConfirmButton: false,
                 timer: 1500
             })
+            var dem = 0;
             setInterval(function () {
                 return new Promise(function (resolve, reject) {
-                    axios.post('http://localhost:3000/cart', {
-                        id: api_cart.length + 1,
+                    axios.post(`http://localhost:3000/auth/${url}`, {
+                        id: dem++,
                         "img": get_id.img,
                         "name": get_id.name,
                         "price": get_id.price,
@@ -33,7 +44,7 @@ async function add_to_cart() {
                         console.log(response);
                     })
                 })
-            },1500);
+            }, 1500);
         }
     } else {
         btn_sing.forEach(element => {
@@ -336,21 +347,21 @@ const api = async function (data) {
                         'Sửa thông tin thành công',
                         'success'
                     )
-                   setInterval(function(){
-                     return new Promise(function (resolve, reject) {
-                        axios.put('http://localhost:3000/auth/' + url, {
-                            img: img.value,
-                            name: name_product.value,
-                            age: age.value,
-                            email: email_address.value,
-                            pass: password.value
-                        })
-                            .then(function (response) {
-                                resolve(response)
+                    setInterval(function () {
+                        return new Promise(function (resolve, reject) {
+                            axios.put('http://localhost:3000/auth/' + url, {
+                                img: img.value,
+                                name: name_product.value,
+                                age: age.value,
+                                email: email_address.value,
+                                pass: password.value
                             })
-                        return false;
-                    },1500);
-                   })
+                                .then(function (response) {
+                                    resolve(response)
+                                })
+                            return false;
+                        }, 1500);
+                    })
                 }
             })
 

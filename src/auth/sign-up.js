@@ -1,6 +1,11 @@
 const email = document.querySelector('.email');
 const passwork = document.querySelector('.pass');
-
+const headers = document.querySelector('.header')
+import header from "../component/header";
+console.log(headers);
+if(headers){
+    headers.innerHTML = header.render();
+}
 async function kiemtra() {
     const api = await (await fetch("http://localhost:3000/auth")).json();
     api.some(function (i) {
@@ -13,7 +18,7 @@ async function kiemtra() {
                 timer: 1500
             })
             setInterval(function () {
-                window.location = `http://127.0.0.1:5500/Production_/index.html?_id=${i.id}`;
+                window.location = `http://127.0.0.1:5501/Production_/index.html?_id=${i.id}`;
                 return false;
             }, 1000)
         } else {
@@ -39,7 +44,7 @@ async function admin_kiemtra() {
                 timer: 1500
             })
             setInterval(function () {
-                window.location = `http://127.0.0.1:5500/Production_/admin.html?_id=${i.id}`;
+                window.location = `http://127.0.0.1:5501/Production_/admin.html`;
                 return false;
             }, 1000)
         } else {

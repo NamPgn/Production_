@@ -42,15 +42,14 @@
       "type": "Đầm"
     },
     {
-      "id": 8,
-      "name": "DAZY Đầm Nút Cắt ra Tách cao màu trơn Thanh lịch",
-      "text": "",
       "img": "./src/img/165112360288ebca48c916a0805204b02bef7a99c9_thumbnail_405x552.webp",
+      "name": "DAZY Đầm Nút Cắt ra Tách cao màu trơn Thanh lịch",
       "price": "260.000",
-      "value": 400,
-      "new": true,
+      "new": "true",
+      "type": "Váy",
       "msp": "AB25",
-      "type": "vest"
+      "value": "400",
+      "id": 8
     },
     {
       "id": 9,
@@ -178,7 +177,7 @@
       "type": "Váy"
     },
     {
-      "img": "https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/271888472_1859299411126408_3453770067510485224_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=YfFiVqN59JAAX-3F0mZ&_nc_ht=scontent.fhan2-2.fna&oh=00_AT9h8u7G7BOT3S_9QvsKyZezfLWo7e63eHMWkKrJzfBkJA&oe=62F020DD",
+      "img": "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/294630009_789678032392563_5819255818178576691_n.jpg?stp=dst-jpg_p240x240&_nc_cat=107&ccb=1-7&_nc_sid=7206a8&_nc_ohc=XiFs7BZe-TsAX_ocznk&_nc_ht=scontent.fhan5-6.fna&oh=00_AT-Pu9Hn2D98r9rIBhWCP0uLS31thW1xGkOe6msCvslhgA&oe=630334AA",
       "name": "Thử thách 1: Lập 01 website giới thiệu về bản thân (portfolio) và thông tin quá trình thực tập tại I&E Vietna",
       "price": "2000000",
       "new": "undefined",
@@ -203,7 +202,8 @@
       "age": "19",
       "email": "nampham1808203@gmail.com",
       "pass": "12",
-      "id": 1
+      "id": 1,
+      "cart": []
     },
     {
       "img": "https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/271888472_1859299411126408_3453770067510485224_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=YfFiVqN59JAAX-3F0mZ&_nc_ht=scontent.fhan2-2.fna&oh=00_AT9h8u7G7BOT3S_9QvsKyZezfLWo7e63eHMWkKrJzfBkJA&oe=62F020DD",
@@ -285,6 +285,18 @@
       "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
       "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
       "price": "226.000"
+    },
+    {
+      "id": 7,
+      "img": "./src/img/16521683674255132b1c71a7adea3e671b850eb273_thumbnail_405x552.webp",
+      "name": "Đầm Lộ Lưng Hội Chữ thập Cắt ra Buộc lại màu trơn Gợi cảm (Phạm giang nam)",
+      "price": "226.000"
+    },
+    {
+      "id": 8,
+      "img": "./src/img/1650431415fb5e24ff27627466fe6f2210f5016549_thumbnail_405x552.webp",
+      "name": "SHEIN Đầm Chia Hoa Thanh lịch",
+      "price": "292.000"
     }
   ],
   "admin": [
